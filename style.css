@@ -1,4 +1,77 @@
 
+:root {
+    --bg-color: #0f172a; 
+    --text-color: #f8fafc;
+    --card-bg: #1e293b;
+    --accent-color: #38bdf8;
+    --nav-bg: #1e293b;
+}
+
+
+[data-theme="light"] {
+    --bg-color: #f8fafc; 
+    --text-color: #0f172a;
+    --card-bg: #ffffff;
+    --accent-color: #6f34fe;
+    --nav-bg: #ffffff;
+}
+
+body, .home, .skill, .blog, .contact, .expertise, .portfolio, section {
+    background: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    transition: 0.3s ease;
+}
+#navbar-top {
+    background-color: var(--nav-bg) !important;
+}
+.navbar-nav a {
+    color: var(--text-color) !important;
+}
+
+.service-card, .progress-card, .card, .blogpost .card {
+    background-color: var(--card-bg) !important;
+    color: var(--text-color) !important;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.circular-progress::before {
+    background-color: var(--card-bg) !important;
+}
+/* Text color fixes for light mode */
+[data-theme="light"] .heading h3, 
+[data-theme="light"] .expertise h4, 
+[data-theme="light"] .home h2 {
+    color: #3f396d !important;
+}
+
+/* Toggle Button Styling */
+#theme-toggle {
+    margin-left: 15px;
+    background: var(--accent-color);
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+/* Toggle Button Styling */
+.theme-btn {
+    background: var(--nav-bg);
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: 0.3s;
+  
+}
+
+
 body{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
@@ -144,6 +217,51 @@ body{
     padding: 15px 15px;
     border-radius: 0.7rem;
 }
+
+/* marquee start here */
+
+.marquee-container {
+    
+    background: linear-gradient(90deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    color: #38bdf8; 
+    padding: 20px 0;
+    _overflow: hidden;
+    white-space: nowrap;
+    border-top: 2px solid #38bdf8;
+    border-bottom: 2px solid #38bdf8;
+    font-family: 'JetBrains Mono', monospace; 
+}
+
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 35s linear infinite; 
+}
+
+.marquee-content span {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 60px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-shadow: 0 0 12px rgba(56, 189, 248, 0.6); 
+}
+
+.marquee-content i {
+    margin-right: 15px;
+    font-size: 1.6rem;
+     cursor: pointer;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/* marquee end here  */
+
 
 /* skill section starts */
 .skill{
@@ -389,4 +507,9 @@ footer .link-group a:hover{
     background-color: #fca61f;
     color: #fff;
     animation: pulse 3s infinite;
+}
+
+.hero, .about, .contact, nav {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
 }
