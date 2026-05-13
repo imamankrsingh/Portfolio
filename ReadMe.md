@@ -1,8 +1,24 @@
-<div align="center">
+
+
+
+```
+aman-portfolio/
+├── 📂 images/               # Project screenshots & brand assets
+│   ├── 🖼️ project-1.png      # Currency convertor
+│   ├── 🖼️ project-2.png      # TicTacToe Game
+│   └── 🖼️ favicon.ico       # Browser tab icon
+├── 📂 css/                  # Styling & UI customization
+│   └── 📄 style.css         # Custom CSS with Dark/Light variables
+├── 📂 js/                   # Logical implementations
+│   └── 📄 script.js         # Theme toggle, Marquee & Auto-year logic
+├── 📄 index.html            # Main portfolio structure & SEO meta tags
+├── 📄 README.md             # Bio & 2026 University Award details
+└── 📄 ReadMe.md             # Technical documentation & project stack
+```
   
-  ![GitHub repo size](https://img.shields.io/github/repo-size/pawantech12/portfolio-website)
-  ![GitHub stars](https://img.shields.io/github/stars/pawantech12/portfolio-website?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/pawantech12/portfolio-website?style=social)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/imamankrsingh/Portfolio)
+  ![GitHub stars](https://img.shields.io/github/stars/imamankrsingh/Portfolio?style=social)
+  ![GitHub forks](https://img.shields.io/github/forks/imamankrsingh/Portfolio?style=social)
 
   <br />
 
@@ -10,7 +26,7 @@
 
   Responsive Portfolio Website using HTML, CSS, and JavaScript.
 
-  <a href="https://pawantech12.github.io/portfolio-website/"><strong>➥ Live Demo</strong></a>
+  <a href="https://github.com/imamankrsingh/Portfolio/"><strong>➥ Live Demo</strong></a>
 
 </div>
 
@@ -18,7 +34,7 @@
 
 ### Desktop Preview
 
-https://github.com/pawantech12/portfolio-website/assets/118673866/0322c419-a173-4aa9-a360-b09bd7bd24aa
+https://github.com/imamankrsingh/Portfolio/assets/118673866/0322c419-a173-4aa9-a360-b09bd7bd24aa
 
 ### Prerequisites
 
@@ -125,18 +141,18 @@ To run **Personal Portfolio** locally, run this command on your git bash:
 Linux and macOS:
 
 ```bash
-sudo git clone https://github.com/pawantech12/portfolio-website.git
+sudo git clone https://github.com/imamankrsingh/Portfolio.git
 ```
 
 Windows:
 
 ```bash
-git clone https://github.com/pawantech12/portfolio-website.git
+git clone https://github.com/imamankrsingh/Portfolio.git
 ```
 
 ### Contact
 
-If you want to contact with me you can reach me at [Instagram](https://www.instagram.com/codewithpawan/).
+If you want to contact with me you can reach me at [Instagram](https://www.instagram.com/aman.singh.rajput.1?igsh=MWRwb3VrYW85NHg4MA==).
 
 ### License
 
