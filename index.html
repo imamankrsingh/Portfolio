@@ -31,6 +31,9 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
 
+    <!-- font awesome cdn link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <!-- for adding animation to website we have use AOS library 
     AOS Library css file cdn link -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -42,7 +45,7 @@
     <!-- navbar starts -->
     <nav
       id="navbar-top"
-      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+      class="navbar navbar-expand-lg   sticky-top"
     >
       <div class="container-fluid px-5">
         <a class="navbar-brand fw-bold fs-2" href="#" style="color: #382a9e"
@@ -75,6 +78,11 @@
         <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">
           Contact
         </button>
+
+        <!-- toggle button for dark/light mode -->
+         <button id="theme-toggle" class="theme-btn">
+    <i class="fas fa-moon" id="theme-icon"></i>
+</button>
       </div>
     </nav>
     <!-- navbar ends here -->
@@ -91,10 +99,9 @@
             Hello! I Am <br /><span class="c-orange">Aman kumar singh</span>
           </h2>
           <p class="text-muted">
-            I'm a web developer specializing in creating fully responsive
-            websites with expertise in both front-end and back-end development.
+            Turning coffee into code and ideas into reality. Specialized in Full Stack Development with a focus on high-performance, responsive websites. Award-winning developer committed to writing clean, maintainable code.
           </p>
-          <a href=""
+          <a href="https://github.com/imamankrsingh"
             ><button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
               Github
             </button></a
@@ -107,6 +114,37 @@
       </div>
     </section>
     <!-- home section ends here -->
+
+    <!-- marquee effect start here -->
+
+    <div class="marquee-container">
+   <div class="marquee-content">
+    <span><i class="fab fa-html5"></i> HTML</span>
+    <span><i class="fab fa-css3-alt"></i> CSS</span>
+    <span><i class="fab fa-js"></i> JavaScript</span>
+    <span><i class="fab fa-java"></i> Java</span>
+    <span><i class="fas fa-database"></i> SQL</span>
+    <span><i class="fas fa-code-branch"></i> DSA</span>
+    <span><i class="fab fa-github"></i> Github</span>
+    <span><i class="fas fa-code"></i> VS Code</span>
+    <span><i class="fas fa-cloud-upload-alt"></i> Vercel</span>
+    <span><i class="fab fa-aws"></i> AWS</span>
+    
+    <!-- Repeat for smooth loop -->
+    <span><i class="fab fa-html5"></i> HTML</span>
+    <span><i class="fab fa-css3-alt"></i> CSS</span>
+    <span><i class="fab fa-js"></i> JavaScript</span>
+    <span><i class="fab fa-java"></i> Java</span>
+    <span><i class="fas fa-database"></i> SQL</span>
+    <span><i class="fas fa-code-branch"></i> DSA</span>
+    <span><i class="fab fa-github"></i> Github</span>
+    <span><i class="fas fa-code"></i> VS Code</span>
+    <span><i class="fas fa-cloud-upload-alt"></i> Vercel</span>
+    <span><i class="fab fa-aws"></i> AWS</span>
+</div>
+</div>
+    <!-- marquee effect end here -->
+
 
     <!-- skill section starts -->
     <section class="skill mt-5 py-5" id="about">
@@ -688,7 +726,7 @@
       </div>
       <hr class="text-muted my-4" />
 
-      <p>Copyright 2025 Portfolio | All Rights Reserved.</p>
+      <p>Copyright <span id="current-year"></span> Portfolio | All Rights Reserved.</p>
     </footer>
     <!-- footer section ends here -->
 
